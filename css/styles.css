@@ -61,6 +61,8 @@ img {
     max-width: 90rem;
     width: 90%;
     margin: 0 auto;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Header */
@@ -109,7 +111,10 @@ img {
 /* Main */
 .main {
     text-align: center;
-    
+}
+.main__titulo {
+    margin-top: 3rem;
+    padding: 1rem;
 }
 
 
