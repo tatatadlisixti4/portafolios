@@ -18,6 +18,11 @@
     --php: #8892BF;
     --typescript: #3178C6;
     --node:  #8CCB31;
+    --js:  #F7DF1E;
+    --css: #1572B6;
+    --sass: #C69;
+
+
 }
 
 /* Globales y reset */
@@ -143,9 +148,9 @@ img {
         border: 2px solid transparent;
         border-radius: .5rem;
         padding: 1rem;
-        transition: border 200ms ease-in;
+        transition: box-shadow 200ms ease-in;
         &:hover {
-            border: 2px solid var(--negro);
+            box-shadow: 0 0 10px var(--primario); 
         }
     }
 }
@@ -236,6 +241,15 @@ img {
     }
     #node {
         background-color: var(--node);
+    }
+    #css {
+        background-color: var(--css);
+    }
+    #sass {
+        background-color: var(--sass);
+    }
+    #js {
+        background-color: var(--js);
     }
 
 }
