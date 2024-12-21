@@ -153,11 +153,18 @@ img {
     gap: 2rem;
     .main__buscador-input {
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
-        border: none;
+        border: 1px solid transparent;
         border-radius: .5rem;
         padding: 1rem;
         width: 100%;
         outline: none;
+        &:hover {
+            border: 1px solid black;
+        }
+        &:focus, &:active {
+            border: 1px solid black;
+            box-shadow: 0 0 10px var(--primario); 
+        }
     }
 }
 
