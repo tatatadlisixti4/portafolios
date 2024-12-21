@@ -90,6 +90,12 @@ img {
     color: var(--blanco);
     background-color: var(--negro);
     padding: 0 3rem;
+    .header__titulo {
+        a {
+            text-decoration: none;
+            color: var(--blanco);
+        }
+    }
 }
 .header__navegacion {
     display: flex;
