@@ -136,6 +136,18 @@ img {
     justify-content: center;
     margin-top: 3rem;
     padding: .3rem 0;
+    
+    a {
+        text-decoration: none;
+        color: var(--negro);
+        border: 2px solid transparent;
+        border-radius: .5rem;
+        padding: 1rem;
+        transition: border 200ms ease-in;
+        &:hover {
+            border: 2px solid var(--negro);
+        }
+    }
 }
 @media (min-width: 768px) {
     .main__titulo {
