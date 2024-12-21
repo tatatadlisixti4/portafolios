@@ -344,9 +344,8 @@ img {
         padding: 1rem;
         border-radius: .5rem;
         font-weight: bold;
-        p{
+        p { 
             line-height: 0;
-            
         }
     }
 }
