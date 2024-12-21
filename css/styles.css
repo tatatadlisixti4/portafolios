@@ -398,6 +398,7 @@ img {
         align-items: center;
         text-decoration: none;
         color: var(--negro);
+        cursor: pointer;
         background-color: var(--blancoOscuro2);
         padding: 1rem;
         border-radius: .5rem;
@@ -405,6 +406,14 @@ img {
         p { 
             line-height: 0;
         }
+        &:hover {
+            filter: brightness(.9);
+        }
+    }
+
+    .main__paginador-boton--anterior1, .main__paginador-boton--siguiente3  {
+        cursor: not-allowed;
+        filter: brightness(.9);
     }
 }
 
