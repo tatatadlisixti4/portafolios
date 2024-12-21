@@ -94,6 +94,16 @@ img {
         a {
             text-decoration: none;
             color: var(--blanco);
+            h2 {
+                padding: 1rem;
+                border: 2px solid transparent;
+                border-radius: .5rem;
+                transition: border 200ms ease-out;
+
+                &:hover {
+                    border: 2px solid white;
+                }
+            }
         }
     }
 }
@@ -300,13 +310,14 @@ img {
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
     background-color: var(--grisClaro);
     padding: 2rem 2rem;
+    transition: all 200ms ease-in;
 }
 
 .main__entrada-imagen {
     height: 15rem;
     width: 100%;
     border-radius: 1.2rem;
-    
+    transition: all 200ms ease-in;
 }
 
 .main__entrada-texto {
@@ -322,6 +333,14 @@ img {
         p{
             font-size: 1rem;
         }
+    }
+}
+
+.main__entrada:hover {
+    filter: brightness(.9);
+    cursor: pointer;
+    .main__entrada-imagen {
+        box-shadow: 0 0 20px var(--primario); 
     }
 }
 
