@@ -127,7 +127,7 @@ img {
 
 /* Main */
 .main {
-    padding: 0 4rem;
+    padding: 0 4rem 3rem 4rem;
     background-color: var(--blancoOscuro);
 }
 
@@ -184,7 +184,7 @@ img {
             margin: 0 auto;
         }
         &:hover {
-            filter: brightness(.7);
+            filter: brightness(.8);
         }
     }
     .main__boton-grid {
@@ -210,7 +210,7 @@ img {
         padding: 1rem;
         border-radius: .5rem;
         &:hover {
-            filter: brightness(0.7);
+            filter: brightness(0.8);
         }
     }
     #react {
@@ -298,7 +298,7 @@ img {
         margin-bottom: 1rem;
         padding: 2rem 3rem;
         &:last-of-type {
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
         }
     }
 
@@ -324,3 +324,14 @@ img {
         gap: 1rem;
     }
 }
+
+/* Main Paginador */
+
+.main__paginador {
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
