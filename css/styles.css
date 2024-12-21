@@ -177,7 +177,7 @@ img {
             margin: 0 auto;
         }
         &:hover {
-            background-color: var(--blancoOscuro2);
+            filter: brightness(.7);
         }
     }
     .main__boton-grid {
@@ -202,6 +202,9 @@ img {
         text-decoration: none;
         padding: 1rem;
         border-radius: .5rem;
+        &:hover {
+            filter: brightness(0.7);
+        }
     }
     #react {
         background-color: var(--react);
