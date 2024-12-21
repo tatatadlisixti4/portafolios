@@ -127,26 +127,36 @@ img {
 
 /* Main */
 .main {
-    text-align: center;
+    padding: 0 4rem;
     background-color: var(--blancoOscuro);
 }
 
 .main__titulo {
+    display: flex;
+    justify-content: center;
     margin-top: 3rem;
     padding: .3rem 0;
 }
+@media (min-width: 768px) {
+    .main__titulo {
+        justify-content: left;
+    }
+    
+}
 
+
+/* Main Buscador */
 .main__buscador {
     display: flex;
-    padding: 0 2rem;
+    flex-direction: column;
     margin-bottom: 3rem;
-    justify-content: space-between;
-    .main__buscador--input {
+    gap: 2rem;
+    .main__buscador-input {
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
         border: none;
         border-radius: .5rem;
         padding: 1rem;
-        width: 30%;
+        width: 100%;
         outline: none;
     }
 }
@@ -154,24 +164,46 @@ img {
 .main__botones {
     display: flex;
     gap: 1rem;
+    justify-content: space-between;
     background-color: var(--blancoOscuro);
+    .main__boton {
+        border: none;
+        border-radius: .5rem;
+        width: 50%;
+        cursor: pointer;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 1rem 0;
+        img {
+            margin: 0 auto;
+        }
+        &:hover {
+            background-color: var(--blancoOscuro2);
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .main__buscador {
+        flex-direction: row;
+        justify-content: space-between;
+        .main__buscador-input {
+            width: 30%;
+        }
+    }
+
+    .main__botones {
+        justify-content: left;
+        .main__boton {
+            width: 5rem;
+            padding: 0;
+        }
+    }
     
 }
 
-.main__boton {
-    border: none;
-    border-radius: .5rem;
-    width: 5rem;
-    cursor: pointer;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
-    img {
-        margin: 0 auto;
-    }
 
-    &:hover {
-        background-color: var(--blancoOscuro2);
-    }
-}
 
 .main__boton-grid {
     img {
@@ -182,7 +214,6 @@ img {
 .main__tags {
     display: flex;
     justify-content: left;
-    padding: 0 2rem;
     margin-bottom: 3rem;
     gap: 1rem;
     a {
@@ -209,12 +240,13 @@ img {
 
 }
 
+
+/* Main Contenido */
 .main__contenido {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
     row-gap: 1rem;
-    padding: 0 2rem;
 }
 
 .main__entrada {
