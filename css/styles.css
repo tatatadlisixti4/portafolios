@@ -161,7 +161,11 @@ img {
     justify-content: center;
     margin-top: 3rem;
     padding: .3rem 0;
+    gap: 1rem;
     
+    .main__titulo-logo {
+        width: 5rem;
+    }
     /* a {
         text-decoration: none;
         color: var(--negro);
@@ -239,6 +243,7 @@ img {
     text-align: center;
     margin-bottom: 3rem;
     gap: 1rem;
+    
     .main__tag {
         box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
         font-weight: bold;
@@ -247,9 +252,16 @@ img {
         text-decoration: none;
         padding: 1rem;
         border-radius: .5rem;
+        border: 1px solid transparent;
         &:hover {
             filter: brightness(0.8);
         }
+    }
+    .main__tag--active {
+        filter: brightness(.8);
+        border: 1px solid black;
+        box-shadow: 0 0 20px var(--primario)
+        
     }
     #react {
         background-color: var(--react);
@@ -413,7 +425,7 @@ img {
         }
     }
 
-    .main__paginador-boton--anterior1, .main__paginador-boton--siguiente3  {
+    .main__paginador-boton--off  {
         cursor: not-allowed;
         filter: brightness(.9);
     }
@@ -445,4 +457,5 @@ img {
         }
     }
 }
+
 

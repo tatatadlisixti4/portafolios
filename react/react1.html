@@ -15,10 +15,9 @@
     </section>
     <header class="header">
         <div class="header__titulo">
-            <a href="#inicio">
+            <a href="/index.html">
                 <h2>Thadli Guerra</h2>
             </a>
-            
         </div>
         <nav class="header__navegacion">
             <a href="">Proyectos</a>
@@ -29,8 +28,9 @@
     
     <main class="main contenedor">
         <div class="main__titulo">
+            <img class="main__titulo-logo" src="/img/react.svg" alt="">
             <h1>
-                <a href="index.html">Proyectos</a>
+                Proyectos - React
             </h1>
         </div>
 
@@ -47,15 +47,35 @@
         </div>
 
         <div class="main__tags">
-            <a class="main__tag" id="react" href="/react/react1.html">React</a>
-            <a class="main__tag" id="php" href="">Php</a>
-            <a class="main__tag" id="typescript" href="">TypeScript</a>
+            <a class="main__tag main__tag--active" id="react" href="/react/react1.html">React</a>
+            <a class="main__tag" id="php" href="/php/php1.html">Php</a>
+            <a class="main__tag" id="typescript" href="/ts/ts1.html">TypeScript</a>
             <a class="main__tag" id="node" href="">Node.Js</a>
             <a class="main__tag" id="js" href="">Html - Css - Js</a>
             <a class="main__tag" id="sass" href="">Html - Sass - Js</a>
         </div>
 
         <div class="main__contenido">
+            <div class="main__entrada">
+                <a href="https://clima-thadli.netlify.app/">
+                    <img class="main__entrada-imagen" src="/img/clima.png" alt="">
+                </a>
+                <div class="main__entrada-texto">
+                    <div class="main__entrada-columna">
+                        <h3>Buscador de Clima</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="main__entrada-columna">
+                        <h3>Herramientas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div> 
+
+                    <div class="main__entrada-columna">
+                        <h3>Categoría</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>  
+                </div>
+            </div>
             <div class="main__entrada">
                 <a href="https://pacientes-zustand-thadli.netlify.app/">
                     <img class="main__entrada-imagen" src="/img/pacientes.png" alt="">
@@ -158,40 +178,25 @@
                     </div>  
                 </div>
             </div>
-            <div class="main__entrada">
-                <a href="https://github.com/tatatadlisixti4/uptask">
-                    <img class="main__entrada-imagen" src="/img/uptask.png" alt="">
-                </a>
-                
-                <div class="main__entrada-texto">
-                    <div class="main__entrada-columna">
-                        <h3>UpTask</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="main__entrada-columna">
-                        <h3>Herramientas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div> 
-
-                    <div class="main__entrada-columna">
-                        <h3>Categoría</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>  
-                </div>
-            </div>
         </div>
 
         <div class="main__paginador"> 
-            <div class="main__paginador-boton main__paginador-boton--anterior1">
+            <div class="main__paginador-boton main__paginador-boton--off ">
                 <span></span>
                 <p>Anterior</p>
             </div>
-            <p>Página 1 de 3</p>
-            <a class="main__paginador-boton main__paginador-boton--siguiente1" href="pagina2.html">
+            <p>Página 1 de 1</p>
+            <div class="main__paginador-boton main__paginador-boton--off">
                 <p>Siguiente</p>
                 <span></span>
-            </a>
+            </div>
         </div>
+
+        <button id="toHeader">
+            <a href="#inicio">
+                <img src="/img/up.svg" alt="">
+            </a>
+        </button>
     </main>
     <script src="app.js"></script> 
 </body>
