@@ -29,6 +29,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -420,6 +421,27 @@ img {
 @media (min-width: 768px) {
     .main__paginador {
         margin-top: 0;
+    }
+}
+
+
+/* Botón al header */
+
+@media (min-width: 768px) {
+    #toHeader {
+        position: fixed;  
+        bottom: 2rem;   
+        right: 33rem;    
+        z-index: 100; 
+        height: auto;
+        width: 6rem;
+        border-radius: 6rem;
+        background-color: var(--primario);
+        filter: brightness(1.3);
+        transition: filter 200ms ease-out;
+        &:hover {
+            filter: brightness(1);
+        }
     }
 }
 
