@@ -162,7 +162,7 @@ img {
     margin-top: 3rem;
     padding: .3rem 0;
     
-    a {
+    /* a {
         text-decoration: none;
         color: var(--negro);
         border: 2px solid transparent;
@@ -172,7 +172,8 @@ img {
         &:hover {
             box-shadow: 0 0 10px var(--primario); 
         }
-    }
+        cursor: auto;
+    } */
 }
 @media (min-width: 768px) {
     .main__titulo {
