@@ -404,7 +404,7 @@ img {
                 border-radius: 1rem;
             }
             img {
-                width: 3.5rem;
+                max-width: 3.5rem;
             }
         }
     }
@@ -424,7 +424,6 @@ img {
         display: flex;
         flex-direction: column;
     }
-
     .main__entrada {
         display: grid;
         grid-template-columns: 1fr 4fr;
@@ -440,7 +439,6 @@ img {
     .main__entrada-texto {
         display: grid;
         grid-template-columns: 1.75fr 0.75fr 0.5fr;
-
         .main__entrada-columna {
             h3 , p {
                 font-size: unset;
@@ -454,7 +452,7 @@ img {
             a {
                 padding: .5rem;
                 img {
-                    width: 4.5rem;
+                    max-width: 4.5rem;
                 }
             }
         }
