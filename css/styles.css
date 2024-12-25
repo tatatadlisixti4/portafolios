@@ -391,7 +391,18 @@ img {
         }
 
     }
+    .main__entrada-herramientas {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        a {
+            img {
+                width: 4rem;
+            }
+        }
+    }
 }
+
 
 .main__entrada:hover {
     filter: brightness(.9);
@@ -421,11 +432,22 @@ img {
     
     .main__entrada-texto {
         display: grid;
-        grid-template-columns: 1.25fr 1.25fr 0.5fr;
+        grid-template-columns: 1.75fr 0.75fr 0.5fr;
 
         .main__entrada-columna {
             h3 , p {
                 font-size: unset;
+            }
+        }
+        .main__entrada-herramientas {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            a {
+                img {
+                    width: 4.5rem;
+                }
             }
         }
     }
