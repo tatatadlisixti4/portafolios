@@ -353,6 +353,38 @@ img {
         p{
             font-size: 1rem;
         }
+        .categoria {
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--negro);
+            text-decoration: none;
+            padding: 1rem;
+            border-radius: .5rem;
+            border: 1px solid transparent;
+        }
+        .react {
+            background-color: var(--react);
+        }
+        .php {
+            background-color: var(--php);
+        }
+        .typescript {
+            background-color: var(--typescript);
+        }
+        .node {
+            background-color: var(--node);
+        }
+        .css {
+            background-color: var(--css);
+        }
+        .sass {
+            background-color: var(--sass);
+        }
+        .js {
+            background-color: var(--js);
+        }
+
     }
 }
 
@@ -372,7 +404,7 @@ img {
 
     .main__entrada {
         display: grid;
-        grid-template-columns: 1fr 6fr;
+        grid-template-columns: 1fr 5fr;
         margin-bottom: 1rem;
         padding: 2rem 3rem;
         column-gap: 1rem;
