@@ -412,6 +412,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    
 
     .main__paginador-boton {
         display: flex;
@@ -435,6 +436,7 @@ img {
         cursor: not-allowed;
         filter: brightness(.9);
     }
+
 }
 
 @media (min-width: 768px) {
@@ -446,7 +448,7 @@ img {
 
 /* Botón al header */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     #toHeader {
         position: fixed;  
         bottom: 2rem;   
@@ -463,6 +465,7 @@ img {
             box-shadow: 0 0 10px var(--primario); 
         }
     }
-}
+} */
+
 
 
