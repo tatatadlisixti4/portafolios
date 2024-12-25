@@ -189,9 +189,7 @@ img {
     .main__titulo {
         justify-content: left;
     }
-    
 }
-
 
 /* Main Buscador */
 .main__buscador {
@@ -343,6 +341,9 @@ img {
 .main__entrada-texto {
     .main__entrada-columna {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         h3, p {
             margin: 0;
         }
@@ -408,12 +409,12 @@ img {
         margin-bottom: 1rem;
         padding: 2rem 3rem;
         column-gap: 1rem;
+        align-items: center;
         &:last-of-type {
             margin-bottom: 3rem;
         }
     }
     
-
     .main__entrada-texto {
         display: flex;
         .main__entrada-columna {
@@ -423,15 +424,12 @@ img {
         }
     }
     .main__entrada-imagen {
-        height: 13.5rem;    
+        width: 100%;
     }
     .main__entrada-columna {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 1rem;
-        gap: 1rem;
+        padding: 1rem;;
     }
 }
 
