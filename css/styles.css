@@ -542,7 +542,7 @@ img {
         .main__entrada-columna {
             h3 {
                 font-size: 2.2rem;
-                color: var(--primario);
+                color: var(--negro);
             }
         }
         .main__entrada-herramientas {
